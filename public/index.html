@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="screen join-screen active">
+            <div class="form">
+                <center><h2>Files পাঠাও!</h2>
+                    <h3 class="grey-text" style="color: grey;"> Share Files Securely with Encryption</h3>
+                <img src="img/03.gif" alt="fileshare" width="300" height="250">
+
+                <form action="receiver.html">
+                     <button type="submit" style="background-color: #e7e7e7; color: black; width: 140px" >Receive files</button>
+                </form>
+
+
+                <div class="form-input">
+                    <button id="sender-start-con-btn">Create room</button>
+                </div>
+                <div class="form-input" id="join-id"></div>
+            </div></center>
+        </div>
+        <div class="screen fs-screen">
+            <div class="file-input">
+                <label for="file-input">
+                    Click here to select files for sharing
+                </label>
+                <input type="file" id="file-input">
+            </div>
+            <div class="files-list">
+                <div class="title">Shared files:</div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="code.js"></script>
+</body>
+</html>
